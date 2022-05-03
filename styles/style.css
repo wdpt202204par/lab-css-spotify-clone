@@ -6,3 +6,11 @@ Green: #00B172
 White: #FFF
 
 */
+
+body {
+    color: #1A1A1A;
+}
+
+.logo{
+    width: 100px;
+}
