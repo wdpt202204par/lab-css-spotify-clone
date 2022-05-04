@@ -32,7 +32,7 @@ nav ul{
 }
 
 nav li{
-    margin-right: 50px;
+    padding-right: 50px;
     font-size: 32px;
     
 }
@@ -78,10 +78,11 @@ h3{
 }
 .icons{
     display: flex;
-    justify-content: space-around;
-    justify-items: center;
+    justify-content: center;
     text-align: center;
-    width: 1440px;
+}
+.icon{
+    width: 30%
 }
 
 .icon img{
@@ -95,6 +96,20 @@ h3{
 }
 .icon p{
     font-size: 25px;
-    margin-inline: 115px;
+    padding-inline: 90px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+.green{
+    background-color: #00B172 ;
+    background-image: url(/images/spotify-icon-white.png);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.app{
+    margin-right: 50px;
+}
+
