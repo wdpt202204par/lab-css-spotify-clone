@@ -32,7 +32,14 @@ nav ul{
 }
 
 nav li{
-    margin-right: 10px;
+    margin-right: 50px;
+    font-size: 32px;
+    
+}
+
+nav a{
+    text-decoration: none;
+    color: #1A1A1A;
 }
 
 nav{
@@ -66,6 +73,28 @@ header div{
 }
 h3{
     text-align: center;
-    text-decoration: underline rgb(32, 130, 32) 2px;
+    text-decoration: underline #00B172 2px;
     font-size: 48px;
+}
+.icons{
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    text-align: center;
+    width: 1440px;
+}
+
+.icon img{
+    width: 120px;
+    height: 120px;
+}
+.icon h4{
+    font-weight: bold;
+    color: #00B172;
+    font-size: 35px;
+}
+.icon p{
+    font-size: 25px;
+    margin-inline: 115px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
