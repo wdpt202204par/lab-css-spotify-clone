@@ -1,44 +1,126 @@
 body {
   margin: 0;
   padding: 0;
-font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  height: 1706px;
+  width: 2560px;
 }
 
 nav {
   background-color: #fff;
   position: fixed;
   display: flex;
+  padding: 0;
+  margin: 0;
 }
+
 nav ul {
   display: flex;
   align-items: center;
   margin-left: auto;
+  margin-right: 16px;
 }
+
 nav li {
   display: flex;
   padding: 5px;
-  list-style-type:none;
+  list-style-type: none;
 }
-li>a{
-    text-decoration:none;
-    color:black;
+
+div img {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+}
+
+
+li a {
+  text-decoration: none;
+  color: black;
+  margin-right: 50%;
+  font-size: 30px;
+}
+
+li {
+  margin: 20px;
 }
 
 img {
-  width: 25%;
+  width: 10%;
   margin: 1em;
+
 }
 
-header div{
-    background-image:url(../images/landing.jpg);
-    background-repeat: 0;
-    background-size: cover;
-    height:auto;
-    padding:auto;
+header h1 {
+  White: #FFF;
 }
-header h1{
-    White: #FFF;
+
+.h1-and-p {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  transform: translateY(-1300px);
+  font-size: 80px;
 }
+
+header div p {
+  font-size: 70%;
+
+}
+
+
+.whats-on {
+  text-align: center;
+  font-size: 50px;
+}
+
+.line {
+  width: 470px;
+  border: 2px solid #00B172;
+  text-align: center;
+  margin: auto;
+  transform: translateY(150px);
+
+
+}
+
+.three-topics {
+  align-content: flex-start;
+}
+
+.icons {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  margin-top: 200px;
+
+
+
+}
+
+.icon {
+  width: 10%;
+  width: 400px;
+
+
+}
+
+.icon h4 {
+  color: #00B172;
+  font-size: 50px;
+
+
+}
+
+.icon p {
+  font-size: 40px;
+  width: 400px;
+
+}
+
 
 /*
 Colors:
