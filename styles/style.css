@@ -49,8 +49,8 @@ li {
   margin: 20px;
 }
 
-img {
-  width: 10%;
+nav img {
+  width: 11%;
   margin: 1em;
 
 }
@@ -89,6 +89,7 @@ header div p {
 
 .three-topics {
   align-content: flex-start;
+  display: flex;
 }
 
 .icons {
@@ -96,6 +97,8 @@ header div p {
   text-align: center;
   justify-content: space-around;
   margin-top: 200px;
+
+
 
 
 
@@ -120,6 +123,47 @@ header div p {
   width: 400px;
 
 }
+
+.app {
+  float: right;
+  margin: 150px;
+  transform: translateY(-1300px);
+
+}
+
+.text {
+  margin: 150px;
+  font-size: 40px;
+  text-align: start;
+  width: 566px;
+  transform: translateY(100px);
+  color: white;
+
+}
+
+.text h3 {
+  width: 700px;
+  margin-bottom: 150px;
+
+}
+
+.green {
+  transform: translateY(800px);
+  background-color: #00B172;
+  height: 1300px;
+  margin: 10px 50px 20px;
+  transform: translateY(100px);
+
+}
+
+.app-mid {
+  background-color: black;
+  background-image: url(/images/spotify-icon-white.png);
+
+
+}
+
+
 
 
 /*
