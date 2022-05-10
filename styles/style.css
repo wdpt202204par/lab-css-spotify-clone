@@ -6,3 +6,209 @@ Green: #00B172
 White: #FFF
 
 */
+@font-face {
+    font-family: 'proxima_nova_rgregular';
+    src: url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot');
+    src: url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.woff') format('woff'),
+         url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.ttf') format('truetype'),
+         url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.svg#proxima_nova_rgregular') format('svg');
+}
+* {
+    font-family: 'proxima_nova_rgregular';
+}
+
+@keyframes underlaneAnimation {
+    0% {
+        font-size: 40px;
+    }
+
+    100% {
+        font-size: 42px;
+    } 
+}
+
+@keyframes navAnimation {
+    0% {
+        /* font-size: 32px; */
+        /* padding-right: 0px; */
+        letter-spacing: 0px;
+    }
+
+    100% {
+        /* font-size: 35px; */
+        /* padding-right: 10px; */
+        letter-spacing: 2px;
+    } 
+}
+
+:root{
+    --nav-height: 75px;
+    --nav-pad: 10px;
+}
+
+body{
+    margin:0;
+}
+
+nav img{
+    margin-left: 50px;
+    width: 250px;
+    height: var(--nav-height);
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    align-content: right;
+    list-style-type: none;  
+}
+
+nav li{
+    padding-right: 50px;
+    font-size: 32px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #1A1A1A;
+    display: block;
+}
+
+nav a:hover{
+    animation-name: navAnimation;
+    animation-duration: 0.5s;
+    animation-iteration-count:inherit;
+    animation-fill-mode:both;
+    animation-direction: alternate;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding-top: var(--nav-pad);
+    padding-bottom: var(--nav-pad);
+}
+
+header{
+    background-image: url(../images/landing.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - var(--nav-height) - 2 * var(--nav-pad));
+    background-size: cover;
+    color: white;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 128px;
+}
+
+header div{
+    justify-content: center;
+}
+
+.h1-and-p p{
+    text-align: center;
+    font-size: 40px;
+    margin-top: -40px;
+}
+
+.whats-on h3{
+    text-align: center;
+    text-decoration: underline #00B172 4px;
+    text-underline-offset: 0.3em;
+    font-size: 40px;
+    font-weight: 1000px;
+    margin-bottom: 100px;
+
+    animation-name: underlaneAnimation;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 0.5s;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.icon{
+    width: 30%;
+}
+
+.icon img{
+    width: 120px;
+    height: 100px;
+}
+
+.icon h4{
+    font-weight: bold;
+    color: #00B172;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.icon p{
+    font-size: 25px;
+    font-weight: 100;
+    padding-inline: 90px;
+    color: #5c5c5c;
+    margin-top: -20px;
+}
+
+.green{
+    background-color: #1ab26b ;
+    background-image: url(../images/spotify-icon-white.png);
+    background-repeat: no-repeat;
+    position: inherit;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 3%;
+    margin-top: 100px;
+    background-position: center;
+    background-size: 10%;
+    color: white;
+}
+
+.app{
+    width: 25rem;
+    height: 40rem;
+    margin-top: 8%;
+    margin-bottom: 5%;
+    margin-right: 7%;
+}
+
+.text{
+    padding-left: 7%;
+    margin-top: -10%;
+}
+
+.text p{
+    font-size: 25px;
+    color:#cee4de;
+    margin-right: 45%;
+    margin-block: 0px;
+    margin-top: -20px;
+}
+
+.green h3{
+    text-decoration: underline white 4px;
+    text-underline-offset: 0.3em;
+    font-size: 40px;
+    padding-bottom: 25px;
+    padding-top: 2em;
+    animation-name: underlaneAnimation;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 0.5s;
+}
+
+.text h4{
+    font-weight: bold;
+    font-size: 35px;   
+}
+
