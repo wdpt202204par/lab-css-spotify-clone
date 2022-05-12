@@ -6,3 +6,215 @@ Green: #00B172
 White: #FFF
 
 */
+
+* {box-sizing:border-box;}
+
+body {
+  margin:0;  /* annule style par défault */
+
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  color:inherit;
+  text-decoration:none;
+}
+
+/*
+##    ##    ###    ##     ## 
+###   ##   ## ##   ##     ## 
+####  ##  ##   ##  ##     ## 
+## ## ## ##     ## ##     ##       
+##  #### #########  ##   ##  
+##   ### ##     ##   ## ##   
+##    ## ##     ##    ###    
+*/
+
+
+/* idée pour bien différencier le CSS appliqué par blocks HTML */
+
+nav {
+  background-color: #fff; /* couleur du fond de la navBar */
+  
+  display:flex; align-items:center; /* "display:flex" permet a la navBar de s'étendre sur la largeur de l'écran quelqu'il soit */
+  /* "align-items" sert a définir la position de l'élément dans son block, haut, centré, bas etc... */
+
+  position:fixed; left:0; top:0; z-index: 99999; /* je ne comprend pas la notion de "z-index" */
+  width:100%;
+}
+nav img {
+  height:4em; /* "em" est la meilleure pratique pour la taille des polices */
+  margin-left:20px; /* permet de décaler l'image sur la droite car naturellement à gauche */
+}
+nav ul {
+  margin-left:auto;
+
+  margin-top:0;margin-bottom:0; /* annule style par défault */
+  padding-left:0; /* annule style par défault */
+
+  margin-right:20px;
+}
+nav ul li {
+  display: inline;
+  font-size: 100%;
+  line-height: 90px;
+  padding:0 1em;
+}
+
+/*
+##          ###    ##    ## ########  #### ##    ##  ######   
+##         ## ##   ###   ## ##     ##  ##  ###   ## ##    ##  
+##        ##   ##  ####  ## ##     ##  ##  ####  ## ##        
+##       ##     ## ## ## ## ##     ##  ##  ## ## ## ##   #### 
+##       ######### ##  #### ##     ##  ##  ##  #### ##    ##  
+##       ##     ## ##   ### ##     ##  ##  ##   ### ##    ##  
+######## ##     ## ##    ## ########  #### ##    ##  ######   
+*/
+
+.header {
+  background-color:#110d09; /* pourquoi avoir une couleur si l'image se superpose à l'arrière plan ? probablement pour couvrir les espaces hypothétiquement non couverts par l'image */
+  background-image: url(../images/landing.jpg); /* l'image est insérée en arrière plan */
+  background-repeat: no-repeat; /* cela permet de ne pas avoir plusieur fois l'image dans le cas ou l'intégralité du block n'est pas couvert par la taille de cette dernière */
+  background-size:cover; /* ici on demande à l'arrière plan de couvrir tout l'espace */
+  height:100vh; /* avec cette valeur nous nous assurons de couvrir 100% de la hauteur, utilse pour une image en format paysage */
+
+  color: #fff; /* couleur du texte (attention à ne pas mettre font-color...) */
+  text-align: center;
+}
+
+
+.header {display: flex;}
+
+.header .great-title {
+  
+  margin:auto}
+
+.header h1 {
+  margin-bottom:0;
+
+  font-size:450%;
+
+}
+.header p {
+  font-size:175%;
+
+}
+
+/*
+ #######  ########  #######  ########  ####  ######   ######  
+##     ##    ##    ##     ## ##     ##  ##  ##    ## ##    ## 
+       ##    ##    ##     ## ##     ##  ##  ##       ##       
+ #######     ##    ##     ## ########   ##  ##        ######  
+       ##    ##    ##     ## ##         ##  ##             ## 
+##     ##    ##    ##     ## ##         ##  ##    ## ##    ## 
+ #######     ##     #######  ##        ####  ######   ######  
+*/
+
+
+
+
+.advantages h1 {
+  display: cover;
+  font-size: 2em;
+  background-color: #fff;
+  text-align: center;
+}
+
+.advantages .adv-content {
+  display: flex;
+}
+
+.advantages .adv1 {
+  display: inline;
+  align-items:center;
+  margin-left: 300px;
+  margin-right: 35px;
+}
+
+.advantages .adv2 {
+  display: inline;
+  align-items:center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.advantages .adv3 {
+  display: inline;
+  align-items:center;
+  margin-right: 35px;
+  margin-right: 300px;
+}
+
+.advantages img {
+  height: 5em;
+}
+
+.advantages h2 {
+  font-size: 2em;
+  background-color: #fff;
+  color: #1ea758;
+  text-align: center;
+}
+
+
+.advantages p {
+  height: 1em;
+  text-align: center;
+  color: #110d09;
+  border-bottom: 5px solid #1ea758;
+  padding-bottom:4em;
+}
+
+
+/*
+ ######   ########  ######## ######## ##    ## 
+##    ##  ##     ## ##       ##       ###   ## 
+##        ##     ## ##       ##       ####  ## 
+##   #### ########  ######   ######   ## ## ## 
+##    ##  ##   ##   ##       ##       ##  #### 
+##    ##  ##    ##  ##       ##       ##   ### 
+ ######   ##     ## ######## ######## ##    ## 
+*/
+
+.promotion {
+  background: #1ea758 url(../images/spotify-icon-white.png) center no-repeat;
+  background-size:auto 200px;
+
+  columns: 2;
+
+  color: #fff;
+  margin:50px;
+  padding:80px;
+
+  display:flex;
+}
+
+.promotionText { /* exemple, il faut définir le bloc entier avant ses dépendances */
+  margin-left: 3Opx;
+}
+
+.promotionText h3 {
+  margin-top:0; /* annule style par défault récup sur correction d'Antoine */
+  border-bottom: 4px solid #fff;
+  font-size: 2em;
+  margin-bottom: 2em;
+}
+.promotionText h4 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+.promotionText p {
+  font-size: 1em;
+  max-width:15em;
+  margin-bottom: 4em;
+}
+
+.illustration { /* bloc parent de l'image */
+  margin-right: 30px;
+  margin-left:auto;
+}
+
+.illustration img { /* encore une fois, l'image doit être travaillée après le bloc auquel elle appartient */
+  height: 600px;
+  width: auto;
+}
