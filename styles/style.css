@@ -1,3 +1,171 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  height: 1706px;
+  width: 2560px;
+}
+
+nav {
+  background-color: #fff;
+  position: fixed;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 16px;
+}
+
+nav li {
+  display: flex;
+  padding: 5px;
+  list-style-type: none;
+}
+
+div img {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+}
+
+
+li a {
+  text-decoration: none;
+  color: black;
+  margin-right: 50%;
+  font-size: 30px;
+}
+
+li {
+  margin: 20px;
+}
+
+nav img {
+  width: 11%;
+  margin: 1em;
+
+}
+
+header h1 {
+  White: #FFF;
+}
+
+.h1-and-p {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  transform: translateY(-1300px);
+  font-size: 80px;
+}
+
+header div p {
+  font-size: 70%;
+
+}
+
+
+.whats-on {
+  text-align: center;
+  font-size: 50px;
+}
+
+.line {
+  width: 470px;
+  border: 2px solid #00B172;
+  text-align: center;
+  margin: auto;
+  transform: translateY(150px);
+
+
+}
+
+.three-topics {
+  align-content: flex-start;
+  display: flex;
+}
+
+.icons {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  margin-top: 200px;
+
+
+
+
+
+}
+
+.icon {
+  width: 10%;
+  width: 400px;
+
+
+}
+
+.icon h4 {
+  color: #00B172;
+  font-size: 50px;
+
+
+}
+
+.icon p {
+  font-size: 40px;
+  width: 400px;
+
+}
+
+.app {
+  float: right;
+  margin: 150px;
+  transform: translateY(-1300px);
+
+}
+
+.text {
+  margin: 150px;
+  font-size: 40px;
+  text-align: start;
+  width: 566px;
+  transform: translateY(100px);
+  color: white;
+
+}
+
+.text h3 {
+  width: 700px;
+  margin-bottom: 150px;
+
+}
+
+.green {
+  transform: translateY(800px);
+  background-color: #00B172;
+  height: 1300px;
+  margin: 10px 50px 20px;
+  transform: translateY(100px);
+
+}
+
+.app-mid {
+  background-color: black;
+  background-image: url(/images/spotify-icon-white.png);
+
+
+}
+
+
+
+
 /*
 Colors:
 
